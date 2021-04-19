@@ -209,5 +209,28 @@ button:focus {
 
   .navbar-light .navbar-nav .nav-item:first-of-type .nav-link {
     margin-left: 0; } }
+.hero {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px 0; }
+  .hero .display-4 {
+    font-weight: 900; }
+  .hero .btn-danger {
+    color: #fff;
+    background-color: #FF6033;
+    border-color: #FF6033;
+    border-radius: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); }
+    .hero .btn-danger:hover {
+      background-color: #fff;
+      color: #FF6033 !important; }
+
+@media (min-width: 992px) {
+  .hero {
+    padding: 250px 0; } }
+@media (min-width: 1200px) {
+  .hero {
+    padding: 200px 0 420px; } }
 
 /*# sourceMappingURL=theme.css.map */
