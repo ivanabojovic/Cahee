@@ -32,6 +32,8 @@ header {
     color: rgba(0, 0, 0, 0.9);
     font-family: "Pacifico", cursive;
     font-size: 2.94rem; }
+    .navbar .navbar-brand:hover {
+      color: #FF6033; }
   .navbar .navbar-nav {
     background: #FBFBF7; }
 
@@ -232,5 +234,12 @@ button:focus {
 @media (min-width: 1200px) {
   .hero {
     padding: 200px 0 420px; } }
+.about figure img {
+  display: block;
+  max-width: 100%; }
+
+@media (min-width: 768px) {
+  .about {
+    padding: 50px 0; } }
 
 /*# sourceMappingURL=theme.css.map */
