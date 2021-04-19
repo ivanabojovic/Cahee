@@ -6,6 +6,11 @@
     padding:80px 0;
     .display-4 {
         font-weight:900;
+        &:hover {
+            transition:0.4s linear;
+            color:$orange;
+            cursor:pointer;
+        }
     }
     .btn-danger {
         color:$white;

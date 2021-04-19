@@ -33,7 +33,9 @@ header {
     font-family: "Pacifico", cursive;
     font-size: 2.94rem; }
     .navbar .navbar-brand:hover {
-      color: #FF6033; }
+      color: #FF6033;
+      transition: 0.4s linear;
+      cursor: pointer; }
   .navbar .navbar-nav {
     background: #FBFBF7; }
 
@@ -41,7 +43,10 @@ header {
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link:focus {
-  color: #262626; }
+  color: #262626;
+  background: #FF6033;
+  transition: 0.5s linear;
+  border-radius: 4px; }
 
 navbar-light .navbar-nav li > .nav-link.active {
   font-weight: 700;
@@ -174,6 +179,15 @@ button:focus {
   .navbar-light .navbar-nav .nav-link:hover {
     color: #262626; }
 
+  .navbar-light .navbar-nav li > .nav-link.active,
+  .navbar-light .navbar-nav .nav-link.active,
+  .navbar-light .navbar-nav .nav-link:hover,
+  .navbar-light .navbar-nav .nav-link:focus {
+    color: #262626 !important;
+    background: transparent;
+    border-radius: 0 !important;
+    transition: 0.5s linear !important; }
+
   .hvr-overline-from-left {
     display: inline-block;
     vertical-align: middle;
@@ -218,6 +232,10 @@ button:focus {
   padding: 80px 0; }
   .hero .display-4 {
     font-weight: 900; }
+    .hero .display-4:hover {
+      transition: 0.4s linear;
+      color: #FF6033;
+      cursor: pointer; }
   .hero .btn-danger {
     color: #fff;
     background-color: #FF6033;
@@ -238,6 +256,10 @@ button:focus {
 .about figure img {
   display: block;
   max-width: 100%; }
+.about .about-item-title:hover {
+  transition: 0.6s linear;
+  color: #FF6033;
+  cursor: pointer; }
 
 @media (min-width: 768px) {
   .about {
@@ -254,7 +276,8 @@ button:focus {
     margin-bottom: 0; }
     .services .services-items .services-items-title:hover {
       color: #FF6033;
-      cursor: pointer; }
+      cursor: pointer;
+      transition: 0.4s linear; }
   .services .services-items figure {
     margin-bottom: 0;
     border-left: 1px solid #9D9D9D;
@@ -274,7 +297,8 @@ button:focus {
   margin: 0 auto; }
   .services .services-item-title:hover {
     color: #FF6033 !important;
-    cursor: pointer; }
+    cursor: pointer;
+    transition: 0.4s linear; }
 
 @media (min-width: 768px) {
   .services {
@@ -291,6 +315,9 @@ button:focus {
     background-color: #fff;
     color: #5585A2 !important;
     transition: 0.6s linear; }
+.gallery .gallery-title:hover {
+  transition: 0.4s linear;
+  color: #FF6033; }
 
 @media (min-width: 576px) {
   .gallery-description {
@@ -320,5 +347,62 @@ button:focus {
   .gallery-description {
     margin-bottom: 41px !important;
     width: 50%; } }
+.subscribe {
+  background-size: cover;
+  background-position: right; }
+  .subscribe .subscribe-title {
+    font-size: 2.35rem; }
+    .subscribe .subscribe-title:hover {
+      color: #FF6033;
+      transition: 0.4s linear;
+      cursor: pointer; }
+  .subscribe .subscribe-content {
+    color: #96B92C; }
+  .subscribe .form-group {
+    margin-bottom: 1.5rem; }
+    .subscribe .form-group .btn-danger {
+      background: #96B92C;
+      border-color: #96B92C; }
+      .subscribe .form-group .btn-danger:hover {
+        color: #96B92C !important;
+        background-color: #fff !important;
+        transition: 0.4s linear;
+        cursor: pointer; }
+  .subscribe .form-control {
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #262626;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #262626;
+    border-radius: 0;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
+    .subscribe .form-control::placeholder {
+      color: #262626;
+      font-size: 0.8rem;
+      font-weight: 300; }
+    .subscribe .form-control:focus {
+      color: #262626;
+      background-color: #fff;
+      border-color: #96B92C;
+      outline: 0;
+      box-shadow: 0 0 0 0.1rem rgba(150, 185, 44, 0.7); }
+
+.btn-subscribe:not(:disabled):not(.disabled):active,
+.btn-subscribe:not(:disabled):not(.disabled).active,
+.show > .btn-subscribe.dropdown-toggle {
+  color: #fff;
+  background-color: #7fa312;
+  border-color: #68811b; }
+
+.btn-subscribe:not(:disabled):not(.disabled):active:focus,
+.btn-subscribe:not(:disabled):not(.disabled).active:focus,
+.show > .btn-subscribe.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.1rem rgba(104, 129, 27, 0.5); }
+
+@media (min-width: 576px) {
+  .subscribe-content {
+    color: #262626; } }
 
 /*# sourceMappingURL=theme.css.map */

@@ -5,6 +5,13 @@
             max-width:100%;
         }
     }
+    .about-item-title {
+        &:hover {
+            transition:0.6s linear;
+            color:$orange;
+            cursor:pointer;
+        }
+    }
 }
 @media(min-width:768px) {
     .about {
