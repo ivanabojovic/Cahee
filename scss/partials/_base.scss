@@ -1,0 +1,29 @@
+$font-raleway: 'Raleway', sans-serif;
+$body-color: $black;
+
+
+html {
+    font-size: 14px;
+}
+
+body {
+    font-family: $font-raleway;
+    color: $body-color;
+    position: relative;
+}
+
+img {
+    max-width: 100%;
+}
+
+.about-item-title,
+.services-item-title,
+.gallery-title,
+.subscribe-title,
+.blog-title,
+.contact-title {
+    font-size: 5.3rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+

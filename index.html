@@ -39,7 +39,45 @@ and open the template in the editor.
 
         <title>Cahee</title>
     </head>
-    <body>
+    <body data-spy="scroll" data-target="#main-nav">
+        <!--Header start-->
+        <header class="main-header py-md-2 py-lg-3 fixed-top">
+            <div class="container">
+                <nav class="navbar navbar-expand-md navbar-light">
+                    <a class="navbar-brand" href="#">Cahee</a>
+                    <button class="hamburger hamburger--spin" type="button" data-toggle="collapse" data-target="#main-nav"
+                            aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="main-nav">
+                        <ul class="navbar-nav justify-content-center ml-md-auto">
+                            <li class="nav-item active text-center">
+                                <a class="nav-link" href="#hero">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item  text-center">
+                                <a class="nav-link " href="#about">About</a>
+                            </li>
+                            <li class="nav-item  text-center">
+                                <a class="nav-link " href="#services">Services</a>
+                            </li>
+                            <li class="nav-item  text-center">
+                                <a class="nav-link " href="#gallery">Gallery</a>
+                            </li>
+                            <li class="nav-item  text-center">
+                                <a class="nav-link " href="#blog">Blog</a>
+                            </li>
+                            <li class="nav-item  text-center">
+                                <a class="nav-link " href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!--Header end-->
 
 
 
