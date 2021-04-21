@@ -1,0 +1,104 @@
+$form-bg: $blue;
+$border: #355B82;
+.contact {
+    .contact-title {
+        &:hover {
+            color:$orange;
+            transition:0.4s linear;
+            cursor:pointer;
+        }
+    }
+    background-size:cover;
+    .contact-description {
+        width:80%;
+    }
+    .form-group {
+        margin-bottom: 1rem;
+    }
+    .form-control::placeholder {
+        color:$white;
+        font-size: 0.8rem;
+        font-weight: 300;
+    }
+    .form-control {
+        padding:25px;
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 1.5;
+        color: $white;
+        background-color: $form-bg;
+        border: none;
+        border-left: 5px solid transparent;
+        background-clip: border-box;
+        border-radius: 0;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        &:focus {
+            color:$white;
+            background-color: $form-bg;
+            border-color:$border;
+            outline:0;
+            box-shadow:none;
+        }
+        
+    }
+    textarea {
+        resize:none;
+    }
+    .btn-danger {
+        background-color: $form-bg;
+        border-color: $form-bg;
+        box-shadow: 0 0 0 0.05rem rgba(1, 167, 167, 0.5);
+        &:hover {
+            color: $form-bg !important;
+            background-color: $white ;
+            transition:0.6s linear;
+            cursor:pointer;
+        }
+    }
+    .contact-info {
+        .contact-info-title {
+            font-weight: 700;
+            margin-bottom: 0;
+            text-transform: uppercase;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+}
+.contact .btn-danger:not(:disabled):not(.disabled):active:focus,
+.contact .btn-danger:not(:disabled):not(.disabled).active:focus,
+.show > .contact .btn-danger.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.05rem rgba(1, 167, 167, 0.5);
+}
+
+@media(min-width:576px) {
+    .contact {
+        .contact-form {
+            width:80%;
+            margin:0 auto;
+        }
+        .contact-description {
+            width:60%;
+        }
+    }
+}
+@media(min-width:768px) {
+    .contact {
+        .contact-description {
+            width:40%;
+        }
+    }
+}
+@media(min-width:992px) {
+
+}
+@media(min-width:1200px) {
+    .contact {
+        .contact-description {
+            width: 32%;
+            margin-bottom: 41px !important;
+        }
+    }
+}
