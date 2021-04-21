@@ -1,0 +1,35 @@
+
+.main-footer {
+    .main-footer-logo {
+        a {
+            font-family:$font-pacifico;
+            color: inherit;
+            font-size: 2rem;
+            text-decoration: none;
+            transition: 0.3s ease;
+
+        }
+    }
+    .main-footer-author {
+        span {
+            color:$red;
+        }
+    }
+}
+@media(min-width:992px) {
+    .main-footer {
+        .main-footer-logo {
+            a {
+                &:hover {
+                    color:$red;
+                    transition:0.4s linear;
+                    cursor:pointer;
+                    
+
+                }
+            }
+        }
+    }
+}
+
+

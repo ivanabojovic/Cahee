@@ -584,5 +584,19 @@ button:focus {
   .contact .contact-description {
     width: 32%;
     margin-bottom: 41px !important; } }
+.main-footer .main-footer-logo a {
+  font-family: "Pacifico", cursive;
+  color: inherit;
+  font-size: 2rem;
+  text-decoration: none;
+  transition: 0.3s ease; }
+.main-footer .main-footer-author span {
+  color: #F72B3B; }
+
+@media (min-width: 992px) {
+  .main-footer .main-footer-logo a:hover {
+    color: #F72B3B;
+    transition: 0.4s linear;
+    cursor: pointer; } }
 
 /*# sourceMappingURL=theme.css.map */
